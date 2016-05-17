@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-    <h1>Состав команды</h1>
+    <div ng-controller="player as playerCtrl.list">
+        {{player.name}}
+    </div>
+
+    <script src="js/factories/playerFactory.js"></script>
+    <script src="js/contollers/playerCtrl.js"></script>
 </body>
 </html>
