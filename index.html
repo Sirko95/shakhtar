@@ -3,16 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
- <a href="#/">Главная страница</a>
- <a href="#/player">Состав</a>
-<ng-view></ng-view>
+    <div class="bg"></div>
+    <div class="container">
+        <div class="row">
+            <div class="navbar navbar-inverse">
+                <div class="container">
+                    <div class="nav-bar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+                            <span class="sr-only">Открыть навигацию</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="responsive-menu">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#/">Домашняя страница</a></li>
+                            <li><a href="#/player">Игроки</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+         <ng-view></ng-view>
+    </div>
 
     <script src="js/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-route.js"></script>
     <script src="js/route.js"></script>
-    <script src="js/factories/playerFactory.js"></script>
-    <script src="js/contollers/playerCtrl.js"></script>
+    <script src="js/factories/playersFactory.js"></script>
+    <script src="js/contollers/playersCtrl.js"></script>
 </body>
 </html>

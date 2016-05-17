@@ -1,0 +1,43 @@
+
+<div ng-controller="playersCtrl as playersCtrl">
+    <div>
+        <h1>Вратари</h1>
+        <div class="row">
+            <div class="col-md-3" ng-repeat="players in playersCtrl.goalkeepers">
+                <img src="{{players.img}}" class="img-thumbnail">
+                {{players.name}}
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h1>Защитники</h1>
+        <div class="row">
+            <div class="col-md-3" ng-repeat="players in playersCtrl.defenders">
+                <img src="{{players.img}}" class="img-thumbnail">
+                {{players.name}}
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h1>Полузащитники</h1>
+        <div class="row">
+            <div class="col-md-3" ng-repeat="players in playersCtrl.midfielders">
+                <img src="{{players.img}}" class="img-thumbnail">
+                {{players.name}}
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h1>Нападающие</h1>
+        <div class="row">
+            <div class="col-md-3" ng-repeat="players in playersCtrl.forwards">
+                <img src="{{players.img}}" class="img-thumbnail">
+                {{players.name}}
+            </div>
+        </div>
+    </div>
+
+</div>

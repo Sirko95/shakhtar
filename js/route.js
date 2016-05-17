@@ -6,6 +6,6 @@ app.config(function ($routeProvider) {
            templateUrl: 'home.html'
        })
        .when('/player',{
-           templateUrl: 'player.html'
+           templateUrl: 'players.html'
        })
 });
